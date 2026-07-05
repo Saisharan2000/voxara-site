@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voxara — Private Voice Notes + AI Knowledge</title>
-  <meta name="description" content="Capture ideas with your voice. AI-powered transcription runs on your device. Search everything later. Encrypted at rest with a key created on your device.">
-  <meta name="theme-color" content="#0D1117">
+  <title>Voxara: A Conversational Diary — a private voice diary that talks back</title>
+  <meta name="description" content="Speak your everyday thoughts into Voxara. It writes them down, encrypts every note on your phone, and finds them again the moment you ask Lexi. Free for everyone.">
+  <meta name="theme-color" content="#141021">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://voxara.store/">
@@ -13,8 +13,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://voxara.store/">
-  <meta property="og:title" content="Voxara — Private Voice Notes + AI Knowledge">
-  <meta property="og:description" content="Record ideas. Transcribe on-device. Search by meaning. Encrypted at rest.">
+  <meta property="og:title" content="Voxara: A Conversational Diary">
+  <meta property="og:description" content="A private voice diary that talks back. Speak a thought — it's written down and encrypted on your phone. Ask Lexi about your own notes. Free for everyone.">
   <meta property="og:image" content="https://voxara.store/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -22,30 +22,30 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Voxara — Private Voice Notes + AI Knowledge">
-  <meta name="twitter:description" content="Record ideas. Transcribe on-device. Search by meaning. Encrypted at rest.">
+  <meta name="twitter:title" content="Voxara: A Conversational Diary">
+  <meta name="twitter:description" content="A private voice diary that talks back. Speak a thought — it's written down and encrypted on your phone. Ask Lexi about your own notes. Free for everyone.">
   <meta name="twitter:image" content="https://voxara.store/og-image.png">
 
   <!-- Apple Smart App Banner -->
   <meta name="apple-itunes-app" content="app-id=6760368342">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%2300D9FF'/><stop offset='100%' stop-color='%237B61FF'/></linearGradient></defs><circle cx='16' cy='16' r='14' fill='url(%23g)'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%232a2140'/><stop offset='100%25' stop-color='%23E89A55'/></linearGradient></defs><circle cx='16' cy='16' r='14' fill='url(%23g)'/></svg>">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
-    "name": "Voxara: AI Voice Workspace",
+    "name": "Voxara: A Conversational Diary",
     "operatingSystem": "iOS",
-    "applicationCategory": "ProductivityApplication",
-    "description": "Private voice notes with AI transcription, knowledge graph, and encrypted search.",
+    "applicationCategory": "LifestyleApplication",
+    "description": "A private voice diary that writes down what you say, encrypts every note on your device, and finds it again when you ask. Free for everyone.",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -59,16 +59,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #0D1117;
-      --bg-elevated: #161B22;
-      --surface: rgba(255, 255, 255, 0.05);
-      --border: rgba(255, 255, 255, 0.08);
-      --cyan: #00D9FF;
-      --purple: #7B61FF;
-      --text-primary: #F9FAFB;
-      --text-secondary: #9CA3AF;
-      --text-muted: #6B7280;
-      --gradient: linear-gradient(135deg, var(--cyan), var(--purple));
+      --bg: #141021;
+      --bg-elevated: #1d1830;
+      --surface: rgba(244, 239, 231, 0.045);
+      --border: rgba(244, 239, 231, 0.10);
+      --gold: #E89A55;
+      --rose: #D98873;
+      --text-primary: #F4EFE7;
+      --text-secondary: #C9BFD4;
+      --text-muted: #8E85A0;
+      --gradient: linear-gradient(120deg, var(--gold), var(--rose));
       --max-width: 1200px;
     }
 
@@ -78,7 +78,7 @@
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background: var(--bg);
       color: var(--text-primary);
-      line-height: 1.6;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       overflow-x: hidden;
@@ -86,6 +86,8 @@
 
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; height: auto; }
+
+    h1, h2, h3, .serif { font-family: 'Lora', Georgia, 'Times New Roman', serif; }
 
     /* ========== SKIP LINK ========== */
     .skip-link {
@@ -104,7 +106,7 @@
 
     /* ========== FOCUS ========== */
     :focus-visible {
-      outline: 2px solid var(--cyan);
+      outline: 2px solid var(--gold);
       outline-offset: 3px;
       border-radius: 4px;
     }
@@ -126,9 +128,9 @@
     }
 
     .glass {
-      background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(20px) saturate(180%);
-      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      background: var(--surface);
+      backdrop-filter: blur(18px) saturate(150%);
+      -webkit-backdrop-filter: blur(18px) saturate(150%);
       border: 1px solid var(--border);
       border-radius: 20px;
     }
@@ -141,7 +143,7 @@
       right: 0;
       z-index: 100;
       padding: 1rem 0;
-      background: rgba(13, 17, 23, 0.8);
+      background: rgba(20, 16, 33, 0.78);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
@@ -154,17 +156,18 @@
     }
 
     .nav-logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.55rem;
     }
 
     .nav-logo-dot {
-      width: 10px;
-      height: 10px;
+      width: 11px;
+      height: 11px;
       border-radius: 50%;
       background: var(--gradient);
     }
@@ -189,14 +192,14 @@
       padding: 0.5rem 1.25rem;
       border-radius: 10px;
       background: var(--gradient);
-      color: var(--bg) !important;
+      color: #201127 !important;
       font-weight: 600 !important;
       font-size: 0.875rem;
       transition: box-shadow 0.3s, transform 0.2s;
     }
 
     .nav-cta:hover {
-      box-shadow: 0 0 24px rgba(0, 217, 255, 0.3);
+      box-shadow: 0 0 24px rgba(232, 154, 85, 0.32);
       transform: translateY(-1px);
     }
 
@@ -231,7 +234,7 @@
         flex-direction: column;
         padding: 1.5rem;
         gap: 1.25rem;
-        background: rgba(13, 17, 23, 0.95);
+        background: rgba(20, 16, 33, 0.96);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--border);
@@ -247,28 +250,29 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 8rem 0 6rem;
+      padding: 9rem 0 6rem;
       overflow: hidden;
     }
 
-    /* Aurora background */
+    /* Ambient horizon: dusk glow rising over deep plum */
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 70% 50% at 25% 40%, rgba(0, 217, 255, 0.12) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 60% at 75% 60%, rgba(123, 97, 255, 0.1) 0%, transparent 70%),
-        radial-gradient(ellipse 80% 40% at 50% 20%, rgba(0, 217, 255, 0.06) 0%, transparent 60%);
+        radial-gradient(120% 80% at 50% 118%, rgba(232, 154, 85, 0.34) 0%, rgba(217, 136, 115, 0.16) 32%, transparent 62%),
+        radial-gradient(90% 60% at 18% 8%, rgba(120, 92, 168, 0.22) 0%, transparent 60%),
+        radial-gradient(70% 50% at 85% 22%, rgba(217, 136, 115, 0.12) 0%, transparent 60%),
+        linear-gradient(180deg, #100c1c 0%, #171227 55%, #201636 100%);
       pointer-events: none;
     }
 
-    /* Noise overlay */
+    /* Soft grain */
     .hero::after {
       content: '';
       position: absolute;
       inset: 0;
-      opacity: 0.03;
+      opacity: 0.035;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
       pointer-events: none;
     }
@@ -276,7 +280,7 @@
     .hero-content {
       position: relative;
       z-index: 1;
-      max-width: 800px;
+      max-width: 820px;
     }
 
     .hero-badge {
@@ -287,9 +291,9 @@
       border-radius: 100px;
       font-size: 0.8125rem;
       font-weight: 500;
-      color: var(--cyan);
-      background: rgba(0, 217, 255, 0.08);
-      border: 1px solid rgba(0, 217, 255, 0.15);
+      color: var(--gold);
+      background: rgba(232, 154, 85, 0.10);
+      border: 1px solid rgba(232, 154, 85, 0.22);
       margin-bottom: 2rem;
     }
 
@@ -297,29 +301,29 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background: var(--cyan);
-      animation: pulse-dot 2s ease-in-out infinite;
+      background: var(--gold);
+      animation: pulse-dot 2.4s ease-in-out infinite;
     }
 
     @keyframes pulse-dot {
       0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
+      50% { opacity: 0.35; }
     }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
+      font-size: clamp(2.6rem, 6.2vw, 4.6rem);
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.08;
       margin-bottom: 1.5rem;
     }
 
     .hero-sub {
-      font-size: clamp(1.0625rem, 2vw, 1.25rem);
+      font-size: clamp(1.0625rem, 2vw, 1.28rem);
       color: var(--text-secondary);
-      max-width: 580px;
+      max-width: 620px;
       margin: 0 auto 2.5rem;
-      line-height: 1.7;
+      line-height: 1.72;
     }
 
     .hero-cta {
@@ -329,14 +333,14 @@
       padding: 1rem 2rem;
       border-radius: 14px;
       background: var(--gradient);
-      color: var(--bg);
+      color: #201127;
       font-weight: 600;
       font-size: 1rem;
       transition: box-shadow 0.3s, transform 0.2s;
     }
 
     .hero-cta:hover {
-      box-shadow: 0 0 40px rgba(0, 217, 255, 0.3), 0 0 80px rgba(123, 97, 255, 0.15);
+      box-shadow: 0 0 44px rgba(232, 154, 85, 0.34), 0 0 80px rgba(217, 136, 115, 0.16);
       transform: translateY(-2px);
     }
 
@@ -355,7 +359,7 @@
     }
 
     .hero-content > * {
-      animation: fadeUp 0.8s ease-out both;
+      animation: fadeUp 0.85s ease-out both;
     }
     .hero-content > *:nth-child(1) { animation-delay: 0.1s; }
     .hero-content > *:nth-child(2) { animation-delay: 0.2s; }
@@ -363,76 +367,54 @@
     .hero-content > *:nth-child(4) { animation-delay: 0.5s; }
     .hero-content > *:nth-child(5) { animation-delay: 0.6s; }
 
-    /* ========== TRUST BAR ========== */
-    .trust {
-      padding: 4rem 0;
+    /* ========== FREE BAND ========== */
+    .free {
+      padding: 4.5rem 0;
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-    }
-
-    .trust-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
       text-align: center;
+      position: relative;
     }
 
-    .trust-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.75rem;
+    .free::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(60% 100% at 50% 50%, rgba(232, 154, 85, 0.08) 0%, transparent 70%);
+      pointer-events: none;
     }
 
-    .trust-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 217, 255, 0.08);
-      border: 1px solid rgba(0, 217, 255, 0.12);
-      color: var(--cyan);
-    }
+    .free-content { position: relative; z-index: 1; }
 
-    .trust-title {
-      font-size: 0.9375rem;
+    .free h2 {
+      font-size: clamp(1.9rem, 4.5vw, 2.9rem);
       font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.9rem;
     }
 
-    .trust-desc {
-      font-size: 0.8125rem;
+    .free p {
+      font-size: 1.1rem;
       color: var(--text-secondary);
-      max-width: 240px;
+      max-width: 620px;
+      margin: 0 auto;
     }
 
-    @media (max-width: 640px) {
-      .trust-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
-    }
-
-    /* ========== FEATURES ========== */
-    .features {
-      padding: 6rem 0;
-    }
-
+    /* ========== SECTION HEADINGS ========== */
     .section-label {
       font-size: 0.8125rem;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--cyan);
+      letter-spacing: 0.10em;
+      color: var(--gold);
       margin-bottom: 1rem;
       text-align: center;
     }
 
     .section-title {
-      font-size: clamp(1.75rem, 4vw, 2.75rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
       text-align: center;
       margin-bottom: 1rem;
     }
@@ -441,113 +423,225 @@
       font-size: 1.0625rem;
       color: var(--text-secondary);
       text-align: center;
-      max-width: 560px;
+      max-width: 620px;
       margin: 0 auto 3.5rem;
     }
 
-    /* Bento grid */
-    .bento-grid {
+    /* ========== LIVING HOME ========== */
+    .living {
+      padding: 6rem 0;
+    }
+
+    .sky-band {
+      max-width: 960px;
+      margin: 0 auto 2rem;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .sky-gradient {
+      height: clamp(140px, 26vw, 240px);
+      /* dawn -> day -> dusk -> night, left to right */
+      background: linear-gradient(90deg,
+        #6a5a86 0%,
+        #c69a8f 20%,
+        #f0c98c 40%,
+        #E89A55 58%,
+        #b5643f 74%,
+        #4a2f52 88%,
+        #1c1430 100%);
+      position: relative;
+    }
+
+    .sky-sun {
+      position: absolute;
+      top: 34%;
+      left: 49%;
+      width: clamp(34px, 6vw, 54px);
+      height: clamp(34px, 6vw, 54px);
+      border-radius: 50%;
+      background: radial-gradient(circle, #fff3d6 0%, #ffd98a 45%, rgba(255, 217, 138, 0) 72%);
+      transform: translate(-50%, -50%);
+    }
+
+    .sky-labels {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      background: var(--bg-elevated);
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .styles-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .style-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      border-radius: 100px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .style-chip .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+    }
+
+    /* ========== FEATURE ROWS ========== */
+    .feature-row {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto auto;
-      gap: 1.25rem;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(2rem, 6vw, 5rem);
+      align-items: center;
+      padding: 5rem 0;
+      border-top: 1px solid var(--border);
     }
 
-    .bento-card {
-      padding: 2rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .feature-row.reverse .feature-text { order: 2; }
+    .feature-row.reverse .feature-visual { order: 1; }
+
+    .feature-eyebrow {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      color: var(--gold);
+      margin-bottom: 1rem;
     }
 
-    .bento-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    .feature-text h2 {
+      font-size: clamp(1.6rem, 3.4vw, 2.35rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      margin-bottom: 1.1rem;
     }
 
-    .bento-card.featured {
-      grid-column: span 2;
+    .feature-text p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.72;
     }
 
-    .bento-icon {
-      width: 44px;
-      height: 44px;
+    .feature-text p + p { margin-top: 1rem; }
+
+    .feature-visual {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Lexi chat mock */
+    .chat-mock {
+      width: 100%;
+      max-width: 420px;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .chat-orb {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--gradient);
+      box-shadow: 0 0 30px rgba(232, 154, 85, 0.35);
+      margin: 0 auto 0.5rem;
+    }
+
+    .bubble {
+      padding: 0.85rem 1.15rem;
+      border-radius: 16px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      max-width: 88%;
+    }
+
+    .bubble.you {
+      align-self: flex-end;
+      background: rgba(232, 154, 85, 0.16);
+      border: 1px solid rgba(232, 154, 85, 0.28);
+      border-bottom-right-radius: 5px;
+    }
+
+    .bubble.lexi {
+      align-self: flex-start;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom-left-radius: 5px;
+      color: var(--text-secondary);
+    }
+
+    /* Languages grid */
+    .lang-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .lang-item {
+      padding: 0.85rem 1.1rem;
       border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      background: var(--surface);
+      border: 1px solid var(--border);
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin-bottom: 1.25rem;
-      background: rgba(0, 217, 255, 0.08);
-      border: 1px solid rgba(0, 217, 255, 0.12);
-      color: var(--cyan);
+      gap: 0.6rem;
     }
 
-    .bento-card:nth-child(even) .bento-icon {
-      background: rgba(123, 97, 255, 0.08);
-      border-color: rgba(123, 97, 255, 0.12);
-      color: var(--purple);
+    .lang-item .tick {
+      color: var(--gold);
+      flex-shrink: 0;
     }
 
-    .bento-title {
-      font-size: 1.125rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .bento-desc {
-      font-size: 0.9375rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    @media (max-width: 900px) {
-      .bento-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .bento-card.featured {
-        grid-column: span 1;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .bento-grid {
+    @media (max-width: 820px) {
+      .feature-row {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 3.5rem 0;
       }
+      .feature-row.reverse .feature-text { order: 1; }
+      .feature-row.reverse .feature-visual { order: 2; }
     }
 
     /* ========== PRIVACY ========== */
     .privacy {
       padding: 6rem 0;
       position: relative;
+      border-top: 1px solid var(--border);
     }
 
     .privacy::before {
       content: '';
       position: absolute;
       inset: 0;
-      background:
-        radial-gradient(ellipse 60% 50% at 50% 50%, rgba(123, 97, 255, 0.06) 0%, transparent 70%);
+      background: radial-gradient(60% 50% at 50% 30%, rgba(120, 92, 168, 0.10) 0%, transparent 70%);
       pointer-events: none;
     }
 
-    .privacy-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .privacy-headline {
-      font-size: clamp(1.75rem, 4vw, 2.75rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    .privacy-sub {
-      font-size: 1.0625rem;
-      color: var(--text-secondary);
-      text-align: center;
-      max-width: 600px;
-      margin: 0 auto 3.5rem;
-    }
+    .privacy-content { position: relative; z-index: 1; }
 
     .privacy-grid {
       display: grid;
@@ -557,87 +651,32 @@
       margin: 0 auto;
     }
 
-    .privacy-card {
-      padding: 1.75rem;
-    }
+    .privacy-card { padding: 1.85rem; }
 
     .privacy-card-title {
-      font-size: 1rem;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.075rem;
       font-weight: 600;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.55rem;
       display: flex;
       align-items: center;
-      gap: 0.625rem;
+      gap: 0.65rem;
     }
 
     .privacy-card-title svg {
-      color: var(--cyan);
+      color: var(--gold);
       flex-shrink: 0;
     }
 
     .privacy-card-desc {
-      font-size: 0.875rem;
+      font-size: 0.9375rem;
       color: var(--text-secondary);
-      line-height: 1.65;
-      padding-left: 1.625rem;
+      line-height: 1.68;
+      padding-left: 1.65rem;
     }
 
     @media (max-width: 640px) {
-      .privacy-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ========== HOW IT WORKS ========== */
-    .how {
-      padding: 6rem 0;
-      border-top: 1px solid var(--border);
-    }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .step {
-      text-align: center;
-      padding: 2rem 1.5rem;
-    }
-
-    .step-number {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.125rem;
-      font-weight: 700;
-      background: var(--gradient);
-      color: var(--bg);
-      margin-bottom: 1.25rem;
-    }
-
-    .step-title {
-      font-size: 1.0625rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .step-desc {
-      font-size: 0.875rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    @media (max-width: 640px) {
-      .steps {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
+      .privacy-grid { grid-template-columns: 1fr; }
     }
 
     /* ========== FINAL CTA ========== */
@@ -645,31 +684,28 @@
       padding: 6rem 0 8rem;
       text-align: center;
       position: relative;
+      border-top: 1px solid var(--border);
     }
 
     .final-cta::before {
       content: '';
       position: absolute;
       inset: 0;
-      background:
-        radial-gradient(ellipse 60% 60% at 50% 80%, rgba(0, 217, 255, 0.08) 0%, transparent 70%);
+      background: radial-gradient(60% 70% at 50% 90%, rgba(232, 154, 85, 0.12) 0%, transparent 70%);
       pointer-events: none;
     }
 
-    .final-cta-content {
-      position: relative;
-      z-index: 1;
-    }
+    .final-cta-content { position: relative; z-index: 1; }
 
     .final-cta h2 {
       font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
+      font-weight: 600;
+      letter-spacing: -0.015em;
       margin-bottom: 1rem;
     }
 
     .final-cta p {
-      font-size: 1.0625rem;
+      font-size: 1.075rem;
       color: var(--text-secondary);
       margin-bottom: 2.5rem;
     }
@@ -738,6 +774,7 @@
         scroll-behavior: auto !important;
       }
       .reveal { opacity: 1; transform: none; }
+      .hero-content > * { animation: none; }
     }
   </style>
 </head>
@@ -755,10 +792,10 @@
         <span></span><span></span><span></span>
       </button>
       <ul id="nav-menu" class="nav-links" role="list">
-        <li><a href="#features">Features</a></li>
+        <li><a href="#living">Living home</a></li>
+        <li><a href="#lexi">Lexi</a></li>
         <li><a href="#privacy">Privacy</a></li>
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="https://apps.apple.com/app/voxara-ai-voice-workspace/id6760368342" class="nav-cta" target="_blank" rel="noopener">Download</a></li>
+        <li><a href="https://apps.apple.com/app/id6760368342" class="nav-cta" target="_blank" rel="noopener">Get the app</a></li>
       </ul>
     </div>
   </nav>
@@ -768,98 +805,125 @@
     <div class="hero-content container">
       <div class="hero-badge">
         <span class="hero-badge-dot" aria-hidden="true"></span>
-        Now live on the App Store
+        Now free for everyone on the App Store
       </div>
-      <h1>Your voice, <span class="gradient-text">your knowledge</span></h1>
+      <h1>A private voice diary<br>that <span class="gradient-text">talks back</span></h1>
       <p class="hero-sub">
-        Capture ideas with your voice. AI transcription runs on your device &mdash; no internet needed. Search everything later. Encrypted at rest with a key created on your device.
+        You think of things all day worth keeping &mdash; and by tonight, they&rsquo;re gone. Speak them into Voxara instead: it writes them down, keeps them private on your phone, and finds them again the moment you ask. It&rsquo;s free &mdash; all of it.
       </p>
-      <a href="https://apps.apple.com/app/voxara-ai-voice-workspace/id6760368342" class="hero-cta" target="_blank" rel="noopener">
+      <a href="https://apps.apple.com/app/id6760368342" class="hero-cta" target="_blank" rel="noopener">
         <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor" aria-hidden="true"><path d="M15.07 12.95c-.03-2.67 2.18-3.95 2.28-4.01-1.24-1.81-3.17-2.06-3.86-2.09-1.64-.17-3.21.97-4.04.97-.84 0-2.13-.95-3.51-.92-1.8.03-3.47 1.05-4.4 2.67-1.88 3.26-.48 8.09 1.35 10.73.9 1.3 1.96 2.75 3.36 2.7 1.35-.05 1.86-.87 3.49-.87 1.63 0 2.1.87 3.53.84 1.45-.02 2.37-1.32 3.25-2.63 1.03-1.5 1.45-2.96 1.47-3.04-.03-.01-2.83-1.09-2.86-4.31zM12.4 4.88c.74-.9 1.24-2.15 1.1-3.4-1.07.04-2.36.71-3.13 1.61-.69.8-1.29 2.07-1.13 3.29 1.19.09 2.41-.6 3.16-1.5z"/></svg>
         Download for iOS
       </a>
-      <p class="hero-platforms">Free to start. No ads. No data selling.</p>
+      <p class="hero-platforms">Free for everyone. Unlimited notes, always.</p>
     </div>
   </header>
 
   <main id="main" tabindex="-1">
 
-    <!-- TRUST BAR -->
-    <section class="trust reveal" aria-label="Trust indicators">
-      <div class="container">
-        <div class="trust-grid">
-          <div class="trust-item">
-            <div class="trust-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
-            </div>
-            <h3 class="trust-title">On-Device AI</h3>
-            <p class="trust-desc">Transcription runs locally on your phone. Audio never leaves your device by default.</p>
-          </div>
-          <div class="trust-item">
-            <div class="trust-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
-            <h3 class="trust-title">Encrypted at Rest</h3>
-            <p class="trust-desc">AES-256-GCM with a key created on your phone — we never store it on our servers.</p>
-          </div>
-          <div class="trust-item">
-            <div class="trust-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <h3 class="trust-title">Zero Data Training</h3>
-            <p class="trust-desc">Your voice data is never used to train AI models. Guaranteed by API agreements.</p>
-          </div>
-        </div>
+    <!-- FREE FOR EVERYONE -->
+    <section class="free reveal" aria-labelledby="free-heading">
+      <div class="free-content container">
+        <p class="section-label">Free for everyone</p>
+        <h2 id="free-heading">Everything included. Nothing held back.</h2>
+        <p>Unlimited notes, always. Lexi is free every month. Everything in the app is included, for everyone.</p>
       </div>
     </section>
 
-    <!-- FEATURES -->
-    <section id="features" class="features" aria-labelledby="features-heading">
+    <!-- LIVING HOME -->
+    <section id="living" class="living" aria-labelledby="living-heading">
       <div class="container">
-        <p class="section-label reveal">Features</p>
-        <h2 id="features-heading" class="section-title reveal">Everything you said, searchable</h2>
-        <p class="section-sub reveal">From a 30-second thought on a walk to an hour-long meeting &mdash; capture, transcribe, and recall anything.</p>
+        <p class="section-label reveal">A living home</p>
+        <h2 id="living-heading" class="section-title reveal">A home screen that follows your day</h2>
+        <p class="section-sub reveal">Open Voxara in the evening and it feels like evening. The home screen is a living scene that moves with your day, dawn to night. A gentle daily prompt invites you to speak &mdash; no pressure, no streaks.</p>
 
-        <div class="bento-grid">
-          <article class="bento-card glass featured reveal">
-            <div class="bento-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
-            </div>
-            <h3 class="bento-title">Voice Capture</h3>
-            <p class="bento-desc">Tap once, talk, done. Whisper AI transcribes on your phone &mdash; no internet required. Zero friction for fast thinkers.</p>
-          </article>
+        <div class="sky-band reveal" role="img" aria-label="A gradient scene shifting from dawn through day and dusk into night">
+          <div class="sky-gradient">
+            <span class="sky-sun" aria-hidden="true"></span>
+          </div>
+          <div class="sky-labels" aria-hidden="true">
+            <span>Dawn</span><span>Day</span><span>Dusk</span><span>Night</span>
+          </div>
+        </div>
 
-          <article class="bento-card glass reveal">
-            <div class="bento-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="8" x2="14" y1="11" y2="11"/><line x1="11" x2="11" y1="8" y2="14"/></svg>
-            </div>
-            <h3 class="bento-title">Semantic Search</h3>
-            <p class="bento-desc">Search by meaning, not keywords. Find that idea you mentioned three months ago in seconds.</p>
-          </article>
+        <div class="styles-row reveal">
+          <span class="style-chip"><span class="dot" style="background:#E89A55" aria-hidden="true"></span>Default</span>
+          <span class="style-chip"><span class="dot" style="background:#D98873" aria-hidden="true"></span>Journal</span>
+          <span class="style-chip"><span class="dot" style="background:#7d6bb0" aria-hidden="true"></span>Focus</span>
+        </div>
+        <p class="section-sub reveal" style="margin-top:1.75rem;margin-bottom:0;">Pick the style that fits you &mdash; Default, Journal, or Focus &mdash; with optional quiet soundscapes.</p>
+      </div>
+    </section>
 
-          <article class="bento-card glass reveal">
-            <div class="bento-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><circle cx="12" cy="14" r="1"/><path d="M12 9v2"/></svg>
-            </div>
-            <h3 class="bento-title">Lexi AI Assistant</h3>
-            <p class="bento-desc">&ldquo;What did I say about pricing last week?&rdquo; Ask questions across all your notes. Get answers with citations.</p>
-          </article>
+    <!-- LEXI -->
+    <section id="lexi" class="container" aria-labelledby="lexi-heading">
+      <div class="feature-row">
+        <div class="feature-text reveal">
+          <p class="feature-eyebrow">Meet Lexi</p>
+          <h2 id="lexi-heading">Ask your notes out loud &mdash; and they answer back</h2>
+          <p>Tap the orb and ask out loud, or just type. Lexi answers only from your own notes &mdash; and finds the right ones even when you don&rsquo;t remember the exact words you used.</p>
+        </div>
+        <div class="feature-visual reveal">
+          <div class="chat-mock glass" aria-hidden="true">
+            <span class="chat-orb"></span>
+            <span class="bubble you">What did I say about the trip last week?</span>
+            <span class="bubble lexi">You noted three things to book before Friday and a place you wanted to revisit. Here are the notes.</span>
+            <span class="bubble you">Summarize my notes from the client call.</span>
+          </div>
+        </div>
+      </div>
 
-          <article class="bento-card glass reveal">
-            <div class="bento-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-            </div>
-            <h3 class="bento-title">Knowledge Graph</h3>
-            <p class="bento-desc">Ideas connect automatically. Topics, entities, and concepts extracted and linked across all your recordings.</p>
-          </article>
+      <!-- SAVE FROM OTHER APPS -->
+      <div class="feature-row reverse">
+        <div class="feature-text reveal">
+          <p class="feature-eyebrow">Save from anywhere</p>
+          <h2>Bring in the things you find in other apps</h2>
+          <p>Share from Safari, X, WhatsApp &mdash; any app with a Share button &mdash; straight into Voxara. Copied text becomes a note in one tap.</p>
+          <p>Kept just as private as everything else.</p>
+        </div>
+        <div class="feature-visual reveal">
+          <div class="chat-mock glass" aria-hidden="true">
+            <span class="bubble lexi">Safari &middot; shared just now</span>
+            <span class="bubble you">Saved to Voxara &mdash; and it&rsquo;s already a note you can search.</span>
+            <span class="bubble lexi">Clipboard &middot; one tap</span>
+          </div>
+        </div>
+      </div>
 
-          <article class="bento-card glass featured reveal">
-            <div class="bento-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </div>
-            <h3 class="bento-title">Cloud Enhance</h3>
-            <p class="bento-desc">Need higher accuracy on an important note? Tap Enhance for cloud AI re-transcription &mdash; you choose when cloud helps. 20+ languages supported.</p>
-          </article>
+      <!-- BOOKMARKS -->
+      <div class="feature-row">
+        <div class="feature-text reveal">
+          <p class="feature-eyebrow">Voice bookmarks</p>
+          <h2>Mark the moment that matters, mid-thought</h2>
+          <p>Long recording, one key idea? Drop a voice bookmark while you speak, then jump straight back to that moment &mdash; no replaying the whole thing.</p>
+        </div>
+        <div class="feature-visual reveal">
+          <div class="chat-mock glass" aria-hidden="true">
+            <span class="bubble lexi">00:42 &nbsp;&mdash;&nbsp; bookmark added</span>
+            <span class="bubble you">Jump back here anytime.</span>
+            <span class="bubble lexi">04:17 &nbsp;&mdash;&nbsp; bookmark added</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="feature-row reverse">
+        <div class="feature-text reveal">
+          <p class="feature-eyebrow">8 languages, all included</p>
+          <h2>Think in your own language</h2>
+          <p>English, Spanish, French, Portuguese, Chinese, German, Japanese, and Italian &mdash; all free, turned into text on your phone whenever it supports the language.</p>
+        </div>
+        <div class="feature-visual reveal">
+          <div class="lang-grid" aria-hidden="true">
+            <span class="lang-item"><svg class="tick" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>English</span>
+            <span class="lang-item"><svg class="tick" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Spanish</span>
+            <span class="lang-item"><svg class="tick" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>French</span>
+            <span class="lang-item"><svg class="tick" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Portuguese</span>
+            <span class="lang-item"><svg class="tick" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Chinese</span>
+            <span class="lang-item"><svg class="tick" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>German</span>
+            <span class="lang-item"><svg class="tick" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Japanese</span>
+            <span class="lang-item"><svg class="tick" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Italian</span>
+          </div>
         </div>
       </div>
     </section>
@@ -867,68 +931,41 @@
     <!-- PRIVACY -->
     <section id="privacy" class="privacy" aria-labelledby="privacy-heading">
       <div class="privacy-content container">
-        <p class="section-label reveal">Privacy</p>
-        <h2 id="privacy-heading" class="privacy-headline reveal">Privacy is not a feature.<br><span class="gradient-text">It's the architecture.</span></h2>
-        <p class="privacy-sub reveal">Most voice apps upload your audio to the cloud. Voxara processes everything on your device by default. When we say private, we built it that way.</p>
+        <p class="section-label reveal">Your voice stays yours</p>
+        <h2 id="privacy-heading" class="section-title reveal">Private by the way it&rsquo;s built</h2>
+        <p class="section-sub reveal">The precise version, in plain words &mdash; the same claims we make in the App Store.</p>
 
         <div class="privacy-grid">
           <div class="privacy-card glass reveal">
             <h3 class="privacy-card-title">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              On-device transcription
+              Transcribed on your phone
             </h3>
-            <p class="privacy-card-desc">Audio stays on your phone. Whisper AI runs locally &mdash; no internet connection needed for transcription.</p>
+            <p class="privacy-card-desc">For English &mdash; and every language your phone can handle on its own &mdash; your voice becomes text right on the phone. Those recordings never leave it, and it works offline.</p>
           </div>
 
           <div class="privacy-card glass reveal">
             <h3 class="privacy-card-title">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              User-held encryption keys
+              Encrypted before it&rsquo;s stored
             </h3>
-            <p class="privacy-card-desc">AES-256-GCM encryption. Your key, your passphrase. We never see your content &mdash; even if our servers were compromised.</p>
+            <p class="privacy-card-desc">Every note is encrypted on your phone before it&rsquo;s stored, with a key that lives only on your device.</p>
           </div>
 
           <div class="privacy-card glass reveal">
             <h3 class="privacy-card-title">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              No model training
+              Never used to train AI
             </h3>
-            <p class="privacy-card-desc">Your voice data is never used to train AI models. This is guaranteed by our API provider agreements.</p>
+            <p class="privacy-card-desc">We never use your notes to train AI &mdash; not us, not our providers.</p>
           </div>
 
           <div class="privacy-card glass reveal">
             <h3 class="privacy-card-title">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Hard deletion
+              A Privacy Dashboard
             </h3>
-            <p class="privacy-card-desc">Delete means delete. Account removal permanently erases all data, keys, and embeddings. Nothing is soft-deleted.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section id="how" class="how" aria-labelledby="how-heading">
-      <div class="container">
-        <p class="section-label reveal">How It Works</p>
-        <h2 id="how-heading" class="section-title reveal">Three steps. Zero friction.</h2>
-        <p class="section-sub reveal">Built for people who think faster than they type.</p>
-
-        <div class="steps">
-          <div class="step reveal">
-            <div class="step-number" aria-hidden="true">1</div>
-            <h3 class="step-title">Speak</h3>
-            <p class="step-desc">Open the app, tap record. Talk through an idea, capture a meeting insight, or draft on the go.</p>
-          </div>
-          <div class="step reveal">
-            <div class="step-number" aria-hidden="true">2</div>
-            <h3 class="step-title">Search</h3>
-            <p class="step-desc">Everything is transcribed and indexed by meaning. Find any idea across all your recordings instantly.</p>
-          </div>
-          <div class="step reveal">
-            <div class="step-number" aria-hidden="true">3</div>
-            <h3 class="step-title">Ask</h3>
-            <p class="step-desc">Ask Lexi anything about your notes. Get answers grounded in your own words, with citations.</p>
+            <p class="privacy-card-desc">See exactly what&rsquo;s stored, in plain words &mdash; right inside the app.</p>
           </div>
         </div>
       </div>
@@ -937,12 +974,14 @@
     <!-- FINAL CTA -->
     <section class="final-cta" aria-label="Download Voxara">
       <div class="final-cta-content container">
-        <h2 class="reveal">Start capturing <span class="gradient-text">your thoughts</span></h2>
-        <p class="reveal">Free to start. Unlimited on-device transcription. No credit card required.</p>
-        <a href="https://apps.apple.com/app/voxara-ai-voice-workspace/id6760368342" class="hero-cta reveal" target="_blank" rel="noopener">
+        <p class="section-label reveal">Made for people who think out loud</p>
+        <h2 class="reveal">Say it now.<br><span class="gradient-text">Find it later.</span></h2>
+        <p class="reveal">Thoughts on a morning walk. A lecture worth keeping. The thing you&rsquo;d rather say than type. Voxara keeps up &mdash; and brings it back the moment you ask.</p>
+        <a href="https://apps.apple.com/app/id6760368342" class="hero-cta reveal" target="_blank" rel="noopener">
           <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor" aria-hidden="true"><path d="M15.07 12.95c-.03-2.67 2.18-3.95 2.28-4.01-1.24-1.81-3.17-2.06-3.86-2.09-1.64-.17-3.21.97-4.04.97-.84 0-2.13-.95-3.51-.92-1.8.03-3.47 1.05-4.4 2.67-1.88 3.26-.48 8.09 1.35 10.73.9 1.3 1.96 2.75 3.36 2.7 1.35-.05 1.86-.87 3.49-.87 1.63 0 2.1.87 3.53.84 1.45-.02 2.37-1.32 3.25-2.63 1.03-1.5 1.45-2.96 1.47-3.04-.03-.01-2.83-1.09-2.86-4.31zM12.4 4.88c.74-.9 1.24-2.15 1.1-3.4-1.07.04-2.36.71-3.13 1.61-.69.8-1.29 2.07-1.13 3.29 1.19.09 2.41-.6 3.16-1.5z"/></svg>
           Download for iOS
         </a>
+        <p class="hero-platforms">Free for everyone. Unlimited notes, always.</p>
       </div>
     </section>
 
@@ -954,7 +993,7 @@
       <ul class="footer-links" role="list">
         <li><a href="https://api.voxara.store/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
         <li><a href="https://api.voxara.store/terms" target="_blank" rel="noopener">Terms of Service</a></li>
-        <li><a href="mailto:support@voxara.store">Support</a></li>
+        <li><a href="https://api.voxara.store/support" target="_blank" rel="noopener">Support</a></li>
       </ul>
       <p class="footer-copy">&copy; 2026 Voxara. All rights reserved.</p>
     </div>
